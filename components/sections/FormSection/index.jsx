@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Input } from "../../Input"
 import { Select } from "../../Select"
+import style from "./style.module.scss"
 
 
 export const NuKenzieForm = ({ addData }) =>{
@@ -25,7 +26,7 @@ export const NuKenzieForm = ({ addData }) =>{
 
     return (
         <div>
-            <form onSubmit={submit} >
+            <form onSubmit={submit} className={style.form} >
                 <div>
                 <Input 
                 type = {"text"}
@@ -49,8 +50,8 @@ export const NuKenzieForm = ({ addData }) =>{
                 />
 
                 <Select value={type} setValue={setType}>
-                    <option value="0">Entrada</option>
-                    <option value="1">Despesa</option>
+                    <option value="Entrada">Entrada</option>
+                    <option value="Despesa">Despesa</option>
                 </Select>
             
                 <button className="btn primary" type="submit">Inserir Valor</button>

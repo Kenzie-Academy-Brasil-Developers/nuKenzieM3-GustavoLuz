@@ -6,8 +6,8 @@ export const NuList = ({balanceList, deleteBalanceList}) =>{
     return (
        (balanceList.length === 0 ?(
         <div>
-            <h3>Resumo Financeiro</h3>
-            <p>Você ainda não possui nenhum lançamento</p>
+            <h3 className="title three">Resumo Financeiro</h3>
+            <p className="paragraph grey">Você ainda não possui nenhum lançamento</p>
         </div>
        ):
        <section >
@@ -17,7 +17,12 @@ export const NuList = ({balanceList, deleteBalanceList}) =>{
                         <ul>
                         {balanceList.map((balance) => (
                             <NuCard 
-                            description={balance.description} value={balance.value} type={balance.type} key={balance.uuid} deleteBalanceList={deleteBalanceList} id={balance.uuid}/>
+                            description={balance.description}
+                            value={balance.value} 
+                            type={balance.type} 
+                            key={balance.uuid} 
+                            deleteBalanceList={deleteBalanceList} 
+                            uuid={balance.uuid}/>
     
                             ))}
                         </ul>

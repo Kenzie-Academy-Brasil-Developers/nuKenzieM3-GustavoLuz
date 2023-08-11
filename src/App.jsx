@@ -20,13 +20,13 @@ function App() {
     const deleteItemList = balanceList.filter(balance => balance.uuid != uuid)
     setList(deleteItemList)
 }
-
+console.log(balanceList)
   return (
     <>
    <Header />
    <main className="container">
    <NuKenzieForm addData={addData} />
-   {/* <TotalBalanceSection balanceList={balanceList}/> */}
+   <TotalBalanceSection balanceList={balanceList}/>
    <NuList balanceList={balanceList} deleteBalanceList={deleteBalanceList} />
 
    </main>
