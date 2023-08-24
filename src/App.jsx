@@ -6,30 +6,29 @@ import { TotalBalanceSection } from "../components/sections/BalanceSection";
 import "../styles/index.scss";
 
 
-function App() {  
+function App() {
 
   const [balanceList, setList] = useState([])
 
-  const addData = (data) =>{
-    const newData = {...data}
-    setList([...balanceList,newData])
+  const addData = (data) => {
+    const newData = { ...data }
+    setList([...balanceList, newData])
 
   }
 
-  const deleteBalanceList = (uuid)=>{
+  const deleteBalanceList = (uuid) => {
     const deleteItemList = balanceList.filter(balance => balance.uuid != uuid)
     setList(deleteItemList)
-}
-console.log(balanceList)
+  }
+
   return (
     <>
-   <Header />
-   <main className="container">
-   <NuKenzieForm addData={addData} />
-   <TotalBalanceSection balanceList={balanceList}/>
-   <NuList balanceList={balanceList} deleteBalanceList={deleteBalanceList} />
-
-   </main>
+      <Header />
+      <main className="container">
+        <NuKenzieForm addData={addData} />
+        <TotalBalanceSection balanceList={balanceList} />
+        <NuList balanceList={balanceList} deleteBalanceList={deleteBalanceList} />
+      </main>
     </>
   )
 }

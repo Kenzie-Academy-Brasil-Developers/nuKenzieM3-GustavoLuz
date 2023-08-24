@@ -12,7 +12,7 @@ export const NuList = ({balanceList, deleteBalanceList}) =>{
        ):
        <section >
                 <div>
-                    <h3 className="">Resumo Financeiro</h3>
+                    <h3 className="title three">Resumo Financeiro</h3>
                     <div>
                         <ul>
                         {balanceList.map((balance) => (
@@ -23,7 +23,6 @@ export const NuList = ({balanceList, deleteBalanceList}) =>{
                             key={balance.uuid} 
                             deleteBalanceList={deleteBalanceList} 
                             uuid={balance.uuid}/>
-    
                             ))}
                         </ul>
                     </div>
