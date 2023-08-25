@@ -4,3 +4,17 @@
     padding: 1rem 1.5rem;
     margin: 0 auto;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+
+    @media (min-width: 850px){
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+   
+}

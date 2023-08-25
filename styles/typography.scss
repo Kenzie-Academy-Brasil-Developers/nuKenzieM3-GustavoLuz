@@ -31,5 +31,10 @@
     &.grey {
         color: var(--grey-4);
     }
+
+    &.primary{
+        color:var(--primary-color2);
+        font-weight: 700;
+    }
     
 }

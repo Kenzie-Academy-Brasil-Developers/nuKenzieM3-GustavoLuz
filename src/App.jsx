@@ -25,8 +25,10 @@ function App() {
     <>
       <Header />
       <main className="container">
+        <div>
         <NuKenzieForm addData={addData} />
         <TotalBalanceSection balanceList={balanceList} />
+        </div>
         <NuList balanceList={balanceList} deleteBalanceList={deleteBalanceList} />
       </main>
     </>

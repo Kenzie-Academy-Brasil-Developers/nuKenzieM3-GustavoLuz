@@ -1,3 +1,31 @@
+.container{
+    background-color: var(--grey-1);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1.25rem;
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+    justify-content: space-between;
+}
+
+.priceContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+
+    button{
+        width: 3.0625rem;
+        height: 1.1875rem;
+        border-radius: 2px;
+    }
+}
+
 .entrada{
     border-left: 5px solid var(--secondary-color) ;
     border-radius: 4px 0;

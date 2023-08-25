@@ -4,7 +4,6 @@ form {
     div {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1.875rem;
         
         padding: 1.6875rem 1.25rem;
         max-width: 100%;
@@ -37,5 +36,11 @@ form {
             border: none;
             max-width: 100%;
         }
+
+        button{
+            font-family: var( --font-primary);
+            font-weight: 700;
+        }
     }
+
 }
