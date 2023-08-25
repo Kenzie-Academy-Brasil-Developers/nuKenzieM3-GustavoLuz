@@ -38,7 +38,7 @@ export const NuKenzieForm = ({ addData }) => {
                         required={true}
                     />
 
-                    <span className="">Ex: Compra de roupas</span>
+                    <span className="paragraph">Ex: Compra de roupas</span>
                     <Input
                         type={"number"}
                         id={"value"}
